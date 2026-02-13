@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <include name="common.xml" />
+        <project path="build"                name="gw826943555/build.git">
+                <linkfile src="rpi4.mk" dest="build/Makefile" />
+                <linkfile src="rpi4/debugger/pi4.cfg" dest="build/pi4.cfg" />
+        </project>
+        <remove-project                      name="linaro-swg/linux.git" />
+        <project path="linux"                name="linaro-swg/linux.git"                  revision="rpi3-optee-6.7" clone-depth="1" />
+
+        <!-- Misc gits -->
+        <project path="firmware"             name="raspberrypi/firmware.git"              revision="refs/tags/1.20230405" clone-depth="1" />
+        <project path="trusted-firmware-a"   name="gw826943555/trusted-firmware-a.git"    revision="a7acc09ab6577abfef8fde1d6b40f8bf6c5587dd" clone-depth="1"/>
+        <project path="u-boot"               name="u-boot/u-boot.git"                     revision="refs/tags/v2021.10" clone-depth="1" />
+</manifest>

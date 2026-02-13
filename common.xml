@@ -5,7 +5,7 @@
 
         <!-- OP-TEE gits -->
         <project path="optee_client"         name="OP-TEE/optee_client.git" />
-        <project path="optee_os"             name="OP-TEE/optee_os.git" />
+        <project path="optee_os"             name="gw826943555/optee_os.git"              revision="19f725c6af79cc11cca6d30dad7792689b94408f" clone-depth="1"/>
         <project path="optee_ftpm"           name="OP-TEE/optee_ftpm.git" />
         <project path="optee_test"           name="OP-TEE/optee_test.git" />
 
