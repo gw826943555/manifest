@@ -4,7 +4,7 @@
         <remote name="tfo"    fetch="https://git.trustedfirmware.org" />
 
         <include name="common.xml" />
-        <project path="build"                name="OP-TEE/build.git">
+        <project path="build"                name="gw826943555/build.git"         revision="imx8mn-evk">
                 <linkfile src="imx.mk" dest="build/Makefile" />
         </project>
 
